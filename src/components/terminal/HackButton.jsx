@@ -4,7 +4,7 @@ import { Zap } from 'lucide-react';
 export default function HackButton({ unlocked }) {
   const handleClick = () => {
     if (unlocked) {
-      window.location.href = 'https://youtube.com';
+      window.location.href = 'hacker-terminal-encrypt.vercel.app';
     }
   };
 
