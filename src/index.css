@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=VT323&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 120 5% 4%;
+    --foreground: 120 100% 75%;
+    --card: 120 5% 7%;
+    --card-foreground: 120 100% 75%;
+    --popover: 120 5% 7%;
+    --popover-foreground: 120 100% 75%;
+    --primary: 120 100% 50%;
+    --primary-foreground: 120 5% 4%;
+    --secondary: 120 10% 12%;
+    --secondary-foreground: 120 100% 75%;
+    --muted: 120 5% 10%;
+    --muted-foreground: 120 30% 40%;
+    --accent: 40 100% 50%;
+    --accent-foreground: 0 0% 4%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 120 40% 20%;
+    --input: 120 40% 20%;
+    --ring: 120 100% 50%;
+    --chart-1: 120 100% 50%;
+    --chart-2: 120 60% 40%;
+    --chart-3: 40 100% 50%;
+    --chart-4: 0 80% 50%;
+    --chart-5: 200 80% 50%;
+    --radius: 0.25rem;
+    --font-heading: 'VT323', monospace;
+    --font-body: 'Share Tech Mono', monospace;
+    --font-display: 'VT323', monospace;
+    --font-mono: 'Share Tech Mono', monospace;
+    --sidebar-background: 120 5% 6%;
+    --sidebar-foreground: 120 100% 75%;
+    --sidebar-primary: 120 100% 50%;
+    --sidebar-primary-foreground: 120 5% 4%;
+    --sidebar-accent: 120 10% 12%;
+    --sidebar-accent-foreground: 120 100% 75%;
+    --sidebar-border: 120 40% 20%;
+    --sidebar-ring: 120 100% 50%;
+  }
+
+  .dark {
+    --background: 120 5% 4%;
+    --foreground: 120 100% 75%;
+    --card: 120 5% 7%;
+    --card-foreground: 120 100% 75%;
+    --popover: 120 5% 7%;
+    --popover-foreground: 120 100% 75%;
+    --primary: 120 100% 50%;
+    --primary-foreground: 120 5% 4%;
+    --secondary: 120 10% 12%;
+    --secondary-foreground: 120 100% 75%;
+    --muted: 120 5% 10%;
+    --muted-foreground: 120 30% 40%;
+    --accent: 40 100% 50%;
+    --accent-foreground: 0 0% 4%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 120 40% 20%;
+    --input: 120 40% 20%;
+    --ring: 120 100% 50%;
+    --chart-1: 120 100% 50%;
+    --chart-2: 120 60% 40%;
+    --chart-3: 40 100% 50%;
+    --chart-4: 0 80% 50%;
+    --chart-5: 200 80% 50%;
+    --sidebar-background: 120 5% 6%;
+    --sidebar-foreground: 120 100% 75%;
+    --sidebar-primary: 120 100% 50%;
+    --sidebar-primary-foreground: 120 5% 4%;
+    --sidebar-accent: 120 10% 12%;
+    --sidebar-accent-foreground: 120 100% 75%;
+    --sidebar-border: 120 40% 20%;
+    --sidebar-ring: 120 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+}
